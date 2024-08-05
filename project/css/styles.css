@@ -192,7 +192,6 @@ a{
 .btn--accent{
     background-color: var(--color-accent);
     color:white;
-
 }
 .btn--accent:hover{
     background: #ec3000;
@@ -209,6 +208,10 @@ a{
 .btn--block{
     width:100%;
     display: inline-block;
+}
+.btn--stretch{
+    padding-left: 7rem;
+    padding-right: 7rem;
 }
 @media screen and (min-width:1024px){ 
     .btn{
@@ -418,4 +421,37 @@ a{
         margin-top: 80px;
     }  
 }
+/* Callouts */
+.callout{
+    border-radius: 5px;
+    text-align: center;
+    padding: 4rem;
+}
+.callout--primary{
+    background: var(--color-primary);
+    color: white;
+}
+.callout__h2{
+    color: white;
+    margin-top: 0;
+    font-size: 3rem;
+}
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+
+}
+@media screen and (min-width: 768px) {
+    .callout .grid--cols-2{
+        grid-template-columns: 1fr auto;
+    }
+    .callout {
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self: start;
+        margin: 0 2rem;
+    }
+}
+
 
