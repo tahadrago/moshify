@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 /* Topography */
+::selection{
+    background: var(--color-primary);
+    color:white;
+}
 html{
     font-size: 62.5%;
 }
@@ -35,6 +39,7 @@ h2{
 }
 h3{
     font-size:  3rem;
+    font-weight: 500;
 }
 p{
     margin-top: 0;
@@ -112,7 +117,7 @@ a{
 .list{
     list-style: none;
     padding-left: 0;
-    color: var(--color-heading);
+    
 }
 
 .list--inline .list__item{
@@ -124,6 +129,7 @@ a{
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
     line-height: 4.2rem;
+    color: var(--color-heading); 
 }
 .list--tick .list__item{
     padding-left: 0.5rem;
@@ -342,7 +348,8 @@ a{
 /* Media */
 .media{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    margin-bottom: 4rem;
 }
 .media__title{
     margin-top : 0;
@@ -352,6 +359,11 @@ a{
 }
 .media__image{
     margin-top: 1rem;
+}
+@media screen and (min-width: 1024px){
+    .media__title{
+        font-size: 1.8rem
+    }
 }
 
 /* Quotes */
@@ -513,16 +525,18 @@ a{
     background: black;
     color: #7b858b;
 }
-.block--dark .block__heading{
+.block--dark h1, 
+.block--dark h2,
+.block--dark h3{ 
     color:white;
 }
 .block--skewed-right{
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 .block--skewed-left{
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 .container{
     max-width: 1140px;
@@ -585,10 +599,6 @@ a{
     }
 }
 /* Hero */
-.hero{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
-
 .hero__tagline{
     font-size: 2rem;
     color:#b0c3cf;
@@ -665,5 +675,21 @@ a{
 @media screen and (min-width: 768px) {
     .feature:nth-of-type(even) .feature__content{
         order:2;
+    }
+}
+/* Showcase Block */
+.block-showcase__img > img{
+    width: 100%;
+}
+@media screen and (min-width: 768px){
+    .block-showcase .grid{
+        grid-template-columns: 50% 50%;
+    }
+    .block-showcase__img{
+        justify-self: end;
+    }
+    .block-showcase__img > img{
+        width: auto;
+        max-width: 700px;
     }
 }
