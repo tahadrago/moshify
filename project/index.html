@@ -11,56 +11,42 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <section class="block block--dark block--skewed-right block-showcase">
+    <section class="block">
         <header class="block__header">
-            <h2>User-Friendly Control Panel</h2>
+            <h2>What our Customer
+                are Saying</h2>
+            <p>Quis ipsum suspendisse ultrices gravida.
+                Risus commodo viverra maecenas accumsan.</p>
         </header>
-        <div class="container grid grid--cols-2">
-            <picture class="block-showcase__img">
-                <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x">
-                <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x">
-                <img src="images/ipad.png" alt="">
-            </picture>
-            <ul class="list">
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M448 80c8.8 0 16 7.2 16 16l0 319.8-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3L48 96c0-8.8 7.2-16 16-16l384 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title">Easy Start & Manages Updates</h3>
-                            <p>Our cloud plans include easy onboarding for new and existing sites and managed WordPress and WooCommerce auto-updates. </p>
-                        </div>
-                    </div> 
-                </li>
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#growth"></use>
+        <div class="container">
+            <div class="card testimonial">
+                <div class="grid grid--cols-2">
+                    <div class="testimonial__image">
+                        <img src="images/testimonial.jpg" alt="A happy, smiling customer">
+                        <span class="icon-container icon-container--accent">
+                            <svg class="icon--small icon--white">
+                                <use xlink:href="images/sprite.svg#quotes"></use>
                             </svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title">Staging, Git & WP-CLI</h3>
-                            <p>We make your WordPress and WooCommerce development flow easier with a convenient staging tool and Git and WP-CLI integration.</p>
-                        </div>
-                    </div> 
-                </li>
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="images/sprite.svg#wordpress"></use>
-                            </svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title">Dynamic Caching & More</h3>
-                            <p>Speed up your WordPress and Woo sites with our SG 
-                                Optimizer plugin through smart dynamic caching and multiple other performance optimizations.</p>
-                        </div>
-                    </div> 
-                </li>
-            </ul>
+                        </span>
+                    </div>
+                    <blockquote class="quote">
+                        <p class="quote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ab quidem mollitia ea delectus ipsam numquam nobis saepe incidunt eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ad provident!</p>
+                        <footer>
+                            <div class="media">
+                                <div class="media__image">
+                                    <svg class="icon icon--primary quote__line">
+                                        <use xlink:href="images/sprite.svg#line"></use>
+                                    </svg>
+                                </div>
+                                <div class="media__body">
+                                    <h3 class="media__title quote__author">Jhone Lumeo</h3>
+                                    <p class="quote__organization">Mosh Company ceo</p>
+                                </div>
+                            </div>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
         </div>
     </section>
     <script src="main.js"></script>
