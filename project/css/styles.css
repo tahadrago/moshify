@@ -607,6 +607,11 @@ a{
     .nav__item{
         border: 0;
     }
+    .nav.collapsible--expanded .nav__list {
+        max-height: none; 
+        opacity: 1;
+        display: flex; 
+    }
 }
 /* Hero */
 .hero__tagline{
